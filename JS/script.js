@@ -157,6 +157,56 @@ $(document).ready(function() {
         }
       ]
     });
+
+
+
+    // Active class
+
+
+      // Select all anchor tags within the menu
+      const $menuItems = $('#service-btn-highlight a');
+  
+      // Add a click event handler to each anchor tag
+      $menuItems.click(function (event) {
+        event.preventDefault();
+  
+        // Remove the "active" class from all anchor tags
+        $menuItems.removeClass('active');
+  
+        // Add the "active" class to the clicked anchor tag
+        $(this).addClass('active');
+      });
+    
+// pdf-download
+
+$("#pdf-download").click(function() {
+  // Create a hidden anchor element
+  var link = $("<a>");
+  link.attr("href", "./images/Brochure.pdf"); // Replace with the actual path to your brochure PDF
+  link.attr("download", "brochure.pdf"); // Specify the filename for the downloaded file
+  link.hide();
+
+  // Append the anchor element to the document
+  $("body").append(link);
+
+  // Trigger a click event on the anchor to initiate the download
+  link[0].click();
+
+  // Remove the anchor element from the document
+  link.remove();
+});
+
+
+// dropdown
+
+$('.dropdown').on('show.bs.dropdown', function () {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+$('.dropdown').on('hide.bs.dropdown', function () {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
   });
   
 
