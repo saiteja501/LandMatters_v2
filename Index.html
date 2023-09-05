@@ -8,7 +8,9 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet" href="./CSS/style.css">
       <link rel="stylesheet" href="./fonts/stylesheet.css">
-      <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+      <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <title>Land Matters</title>
    </head>
@@ -265,7 +267,7 @@
          </div>
       </div>
       <!-- Service cards -->
-      <section>
+      <section data-aos="fade-right">
          <div class="container">
             <div class="row">
                <!-- card -1 -->
@@ -406,7 +408,7 @@
       <!-- Info  -->
       <section>
          <div id="particles-js">
-            <div class="info-section">
+            <div class="info-section" data-aos="fade-down">
                <div class="container">
                   <div class="info-section-block">
                      <div class="info-section-block-content">
@@ -424,7 +426,7 @@
       <section>
          <div class="container">
             <div class="row">
-               <div class="col-sm-12 col-md-6 col-lg-6">
+               <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-up-right">
                   <div>
                      <h4 class="lm-small-heading">Our Story </h4>
                      <h2 class="lm-headings">Who we are </h2>
@@ -455,7 +457,7 @@
                </div>
                <div class="col-sm-12 col-md-6 col-lg-6">
                   <div>
-                     <img class="img-fluid" src="./Images/who-we-are.jpg" alt="">
+                     <img class="img-fluid" src="./Images/who-we-are.jpg" alt="" data-aos="fade-up-left">
                   </div>
                </div>
             </div>
@@ -472,14 +474,14 @@
             </div>
             <div class="container">
                <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-4 z-index-99">
+                  <div class="col-sm-12 col-md-6 col-lg-4 z-index-99" data-aos="fade-down-right">
                      <div>
                         <h4 class="lm-small-heading">Why Choose Us </h4>
                         <h2 class="lm-headings">We Offer Quality Services </h2>
                         <p class="lm-p lm-p-custom-content">With Land Matters as your service partner, we'll assist you in gaining a competitive advantage by prioritizing your needs, allowing you to concentrate on your core business activities </p>
                      </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 col-lg-8">
+                  <div class="col-sm-12 col-md-6 col-lg-8" data-aos="fade-down-left">
                      <div class="row">
                         <!-- card-1 -->
                         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -554,7 +556,7 @@
       </section>
       <!-- Some Facts About Us --> 
       <section class="no-section-margin">
-         <div class="dark-grey-bg-section">
+         <div class="dark-grey-bg-section" data-aos="zoom-in">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12 col-md-5 col-lg-5">
@@ -625,7 +627,7 @@
       </section>
       <div class="clearfix"></div>
       <!-- CUSTOMER REVIEWS -->
-      <section class="grey-bg-section no-section-margin">
+      <section class="grey-bg-section no-section-margin" data-aos="zoom-in-up">
          <div class="why-choose-us">
             <div class="hex-bg-1">
                <img class="img-fluid" src="./Images/hex.png" alt="hex-image">
@@ -773,8 +775,8 @@
          </div>
       </section>
       <!-- Subscribe -->
-      <section class="no-section-margin">
-         <div class="subscribe-section">
+      <section class="no-section-margin"  >
+         <div class="subscribe-section" >
             <div class="container">
                <div class="row">
                   <div class="col-sm-12 col-md-6 col-lg-4" >
@@ -899,11 +901,20 @@
       <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-      <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <!-- <script src="https://threejs.org/examples/js/libs/stats.min.js"></script> -->
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
       <script src="./JS/script.js"></script>
+      <script>
+         AOS.init({
+  duration: 1000
+});
+      </script>
+      <script>
+
+   wow.init();
+      </script>
    </body>
 </html>
